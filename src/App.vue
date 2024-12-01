@@ -19,7 +19,7 @@ import DogsList from "./components/DogsList.vue";
       }
     },methods:{
       async fetchDogsDetails(){
-        const res = await fetch("http://localhost:8924/api");
+        const res = await fetch("https://dog-collection.onrender.com/api");
         const dogsData = await res.json();
         return dogsData[0].dogs;
       }
